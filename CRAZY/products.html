@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo">Midnight</div>
+
+<ul class="nav-links">
+<li><a href="project.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart 🛒 (<span id="cart-count">0</span>)</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="products">
+<h2 class="section-title">Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="head.png">
+<div class="product-info">
+<h3>Midnight Blend</h3>
+<p>KES 100</p>
+<button onclick="addToCart({id:'blend',name:'Midnight Blend',price:100})">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="gin.png">
+<div class="product-info">
+<h3>Night Reserve</h3>
+<p>KES 15</p>
+<button onclick="addToCart({id:'reserve',name:'Night Reserve',price:15})">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="oris.png">
+<div class="product-info">
+<h3>Oris</h3>
+<p>KES 10</p>
+<button onclick="addToCart({id:'oris',name:'Oris',price:10})">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="pal mal.png">
+<div class="product-info">
+<h3>Pal Mal</h3>
+<p>KES 15</p>
+<button onclick="addToCart({id:'palmal',name:'Pal Mal',price:15})">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="blunt.png">
+<div class="product-info">
+<h3>Foreign Blunt</h3>
+<p>KES 100</p>
+<button onclick="addToCart({id:'blunt',name:'Foreign Blunt',price:100})">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="jd.png">
+<div class="product-info">
+<h3>Jack Daniel</h3>
+<p>KES 4500</p>
+<button onclick="addToCart({id:'jack',name:'Jack Daniel',price:4500})">Add to Cart</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<script src="cart.js"></script>
+</body>
+</html>
