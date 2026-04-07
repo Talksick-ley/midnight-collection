@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo">Midnight</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart 🛒 (<span id="cart-count">0</span>)</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="cart-page">
+<h2 class="section-title">Your Cart</h2>
+
+<div id="cart-items"></div>
+<h3 id="cart-total">Total: KES 0</h3>
+<div class="checkout-form">
+
+  <input type="text" id="user-name" placeholder="Your Name" required>
+  <input type="text" id="user-location" placeholder="Delivery Location" required>
+  <input type="tel" id="user-phone" placeholder="Your Phone Number" required>
+
+  <select id="payment-method">
+    <option value="M-Pesa">M-Pesa</option>
+    <option value="Cash">Cash on Delivery</option>
+  </select>
+
+  <button class="checkout-btn" onclick="checkoutWhatsApp()">
+    Complete Order
+  </button>
+
+</div>
+
+</section>
+
+<script src="cart.js"></script>
+</body>
+</html>
