@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Midnight Collection</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SMOKE -->
+  <canvas id="smokeCanvas"></canvas>
+  <script src="smoke.js"></script>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Midnight</div>
+
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart 🛒 (<span id="cart-count">0</span>)</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Est. 2026 — Concept Series</p>
+      <h1 class="hero-title">Midnight Collection</h1>
+      <p class="hero-subtitle">Curated for the nocturnal connoisseur</p>
+    </div>
+  </header>
+
+  <!-- POETIC -->
+  <section class="poetic">
+    <div class="poetic-content">
+      <p>
+        In the quiet hours where the world softens, each creation begins as a whisper—
+        distilled, rolled, and refined beyond the visible.
+        This is not merely craft, but a ritual of patience and precision.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2 class="section-title">Curated Selection</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="head.png">
+        <div class="product-info">
+          <h3>Midnight Blend</h3>
+          <p>KES 100</p>
+          <button onclick="addToCart({id:'blend',name:'Midnight Blend',price:100})">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="gin.png">
+        <div class="product-info">
+          <h3>Night Reserve</h3>
+          <p>KES 750</p>
+          <button onclick="addToCart({id:'reserve',name:'Night Reserve',price:15})">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="jd.png">
+        <div class="product-info">
+          <h3>Jack Daniel</h3>
+          <p>KES 4500</p>
+          <button onclick="addToCart({id:'jack',name:'Jack Daniel',price:4500})">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-bar">
+    <a href="tel:+254716669697" class="contact-item"><i class="fas fa-phone"></i> Phone</a>
+    <a href="https://wa.me/254716669697" target="_blank" class="contact-item"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://instagram.com/_t.a.l.k.s.i.c.k" target="_blank" class="contact-item"><i class="fab fa-instagram"></i> Instagram</a>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
